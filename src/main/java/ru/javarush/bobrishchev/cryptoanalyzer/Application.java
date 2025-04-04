@@ -1,6 +1,5 @@
 package ru.javarush.bobrishchev.cryptoanalyzer;
 
-import com.sun.tools.javac.Main;
 import ru.javarush.bobrishchev.cryptoanalyzer.controllers.MainController;
 import ru.javarush.bobrishchev.cryptoanalyzer.entity.Result;
 import ru.javarush.bobrishchev.cryptoanalyzer.exception.AppExceptions;
@@ -9,7 +8,7 @@ import java.util.Arrays;
 
 public class Application {
 
-    private MainController mainController;
+    private final MainController mainController;
     public Application() {
 
         mainController = new MainController();
