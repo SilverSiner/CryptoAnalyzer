@@ -1,5 +1,6 @@
 package ru.javarush.bobrishchev.cryptoanalyzer;
 
+import ru.javarush.bobrishchev.cryptoanalyzer.constant.Constants;
 import ru.javarush.bobrishchev.cryptoanalyzer.entity.Result;
 
 /**
@@ -8,6 +9,7 @@ import ru.javarush.bobrishchev.cryptoanalyzer.entity.Result;
  */
 public class ConsoleRunner {
     public static void main(String[] args) {
+        //encode text.txt to encode.txt 12
         Application application = new Application();
         Result result = application.run(args);
         System.out.println(result);

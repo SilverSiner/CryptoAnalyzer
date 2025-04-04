@@ -15,11 +15,14 @@ public class Application {
 
     }
         public Result run(String[] args) {
+            //encode text.txt encode.txt 12
         if (args.length > 0) {
             String action = args[0];
+            //params - text.txt to encode.txt 12
             String[] params = Arrays.copyOfRange(args, 1, args.length);
-            mainController.doAction(action, params);
+            return mainController.doAction(action, params);
+        } else {
+            throw new AppExceptions("no args");
         }
-        throw new AppExceptions();
     }
 }
