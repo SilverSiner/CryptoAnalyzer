@@ -9,7 +9,6 @@ public class MainController {
         // action == encode
         // params == [text.txt to encode.txt 12]
         Action action = Actions.findAction(actionName);
-        Result result = action.execute(params);
-        return result;
+        return action.execute(params);
     }
 }

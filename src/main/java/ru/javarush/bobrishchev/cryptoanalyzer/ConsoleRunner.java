@@ -1,6 +1,5 @@
 package ru.javarush.bobrishchev.cryptoanalyzer;
 
-import ru.javarush.bobrishchev.cryptoanalyzer.constant.Constants;
 import ru.javarush.bobrishchev.cryptoanalyzer.entity.Result;
 
 /**
